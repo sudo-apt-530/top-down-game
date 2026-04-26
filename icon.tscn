@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=3 uid="uid://dl0c5l6wkljdy"]
+
+[ext_resource type="Texture2D" uid="uid://723wvvtg2aix" path="res://icon.svg" id="1_hqyvl"]
+[ext_resource type="Script" uid="uid://013chgrs48sv" path="res://icon.gd" id="2_otv2m"]
+
+[node name="Icon" type="Sprite2D"]
+texture = ExtResource("1_hqyvl")
+script = ExtResource("2_otv2m")
+
+[node name="ProgressBar" type="ProgressBar" parent="."]
+offset_left = -101.0
+offset_top = 75.0
+offset_right = 107.0
+offset_bottom = 115.0
+max_value = 5.0
+rounded = true
+show_percentage = false
+
+[node name="Label" type="Label" parent="."]
+offset_left = -45.0
+offset_top = 123.0
+offset_right = -5.0
+offset_bottom = 146.0
+text = "5"
